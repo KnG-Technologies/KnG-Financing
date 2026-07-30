@@ -67,4 +67,4 @@ body {
   text-align: left; border-radius: 6px; margin-bottom: 5px;
 }
 .accordion.active, .accordion:hover { background: gold; color: black; }
-.panel { display: none; padding: 10
+.panel { display: none; padding: 10px; }
