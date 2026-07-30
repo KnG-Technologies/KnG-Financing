@@ -1,0 +1,177 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: linear-gradient(90deg, maroon, #4b0000);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: gold;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(128,0,0,0.7), rgba(128,0,0,0.7)), 
+              url('finance-cover.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 140px 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons button {
+  background-color: gold;
+  color: maroon;
+  padding: 14px 24px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.hero-buttons button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Services Section */
+#services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.service {
+  background-color: white;
+  padding: 25px;
+  border: 2px solid maroon;
+  width: 280px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.service h3 {
+  margin-top: 0;
+  color: maroon;
+}
+
+/* About Section */
+#about {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #fff, #f2f2f2);
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #eee;
+}
+
+#contact a {
+  color: maroon;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: gold;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg,#4b0000,maroon);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #222;
+  color: #eee;
+}
+
+.dark-mode .navbar {
+  background: linear-gradient(90deg, #111, #333);
+}
+
+.dark-mode .hero {
+  background: #333;
+}
+
+.dark-mode .service {
+  background-color: #444;
+  border-color: #eee;
+}
+
+.dark-mode footer {
+  background: #111;
+}
